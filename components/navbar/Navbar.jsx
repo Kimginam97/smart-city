@@ -5,7 +5,7 @@ import { IoMdNotificationsOutline, IoMdInformationCircleOutline } from 'react-ic
 import { BsArrowBarUp } from 'react-icons/bs'
 import { RiMoonFill, RiSunFill } from 'react-icons/ri'
 import navbarimage from '../../public/assets/img/layout/Navbar.png'
-import Dropdown from '../dropdown'
+import Dropdown from '../dropdown/Dropdown'
 
 const Navbar = (props) => {
   const { onOpenSidenav, brandText } = props

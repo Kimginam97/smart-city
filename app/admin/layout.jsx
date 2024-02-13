@@ -1,12 +1,13 @@
 'use client'
 
-import Navbar from '@/components/navbar'
-import Sidebar from '@/components/sidebar'
+import Navbar from '@/components/navbar/Navbar'
+import Sidebar from '@/components/sidebar/Sidebar'
 import routes from '@/routes'
 import { usePathname, useRouter } from 'next/navigation'
 import { useEffect, useState } from 'react'
 
 import '../globals.css'
+import Footer from '@/components/footer/Footer'
 
 export default function AdminLayout({ children }) {
   const [open, setOpen] = useState(true)
@@ -52,16 +53,18 @@ export default function AdminLayout({ children }) {
           <div className="h-full w-full bg-lightPrimary dark:!bg-navy-900">
             {/* Main Content */}
             <main className={`mx-[12px] h-full flex-none transition-all md:pr-2 xl:ml-[313px]`}>
-              {/* Routes */}
-              <div className="h-full">
-                <Navbar
-                  onOpenSidenav={() => setOpen(true)}
-                  logoText={'Smart City'}
-                  brandText={currentRoute}
-                  secondary={getActiveNavbar(routes)}
-                />
-                <div className="pt-5s mx-auto mb-auto h-full min-h-[84vh] p-2 md:pr-2">{children}</div>
-                <div className="p-3">{/* <Footer /> */}</div>
+              {/* Navbar */}
+              <Navbar
+                onOpenSidenav={() => setOpen(true)}
+                logoText={'Smart City'}
+                brandText={currentRoute}
+                secondary={getActiveNavbar(routes)}
+              />
+              {/* Content */}
+              <div className="pt-5 mx-auto mb-auto h-full min-h-[84vh] p-2 md:pr-2">{children}</div>
+              {/* Footer */}
+              <div className="p-3">
+                <Footer />
               </div>
             </main>
           </div>
