@@ -1,5 +1,5 @@
 // Icon Imports
-import { MdHome } from 'react-icons/md'
+import { MdHome, MdOutlineShoppingCart, MdBarChart } from 'react-icons/md'
 
 const routes = [
   {
@@ -9,10 +9,16 @@ const routes = [
     icon: <MdHome className="h-6 w-6" />
   },
   {
-    name: 'Detail Dashboard',
+    name: 'Market Place',
     layout: '/admin',
-    path: '/detail',
-    icon: <MdHome className="h-6 w-6" />
+    path: '/marketplace',
+    icon: <MdOutlineShoppingCart className="h-6 w-6" />
+  },
+  {
+    name: 'Data Tables',
+    layout: '/admin',
+    path: '/datatables',
+    icon: <MdBarChart className="h-6 w-6" />
   }
 ]
 export default routes

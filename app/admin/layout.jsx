@@ -11,7 +11,6 @@ import '../globals.css'
 export default function AdminLayout({ children }) {
   const [open, setOpen] = useState(true)
   let location = usePathname()
-  const router = useRouter()
   const [currentRoute, setCurrentRoute] = useState('Main Dashboard')
 
   useEffect(() => {
@@ -25,8 +24,8 @@ export default function AdminLayout({ children }) {
   const getActiveRoute = (routes) => {
     let activeRoute = 'Main Dashboard'
     for (let i = 0; i < routes.length; i++) {
-      const currentRoute = `${routes[i].layout}/${routes[i].path}`
-      if (router.pathname === currentRoute) {
+      const currentRoute = `${routes[i].layout}${routes[i].path}`
+      if (location === currentRoute) {
         setCurrentRoute(routes[i].name)
       }
     }
@@ -36,8 +35,8 @@ export default function AdminLayout({ children }) {
   const getActiveNavbar = (routes) => {
     let activeNavbar = false
     for (let i = 0; i < routes.length; i++) {
-      const currentRoute = `${routes[i].layout}/${routes[i].path}`
-      if (router.pathname === currentRoute) {
+      const currentRoute = `${routes[i].layout}${routes[i].path}`
+      if (location === currentRoute) {
         return routes[i].secondary
       }
     }
