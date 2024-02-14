@@ -1,5 +1,7 @@
 import Widget from '@/components/widget/Widget'
 import CheckTable from '@/views/admin/dashboard/CheckTable'
+import DailyTraffic from '@/views/admin/dashboard/DailyTraffic'
+import PieChartCard from '@/views/admin/dashboard/PieChartCard'
 import TotalSpent from '@/views/admin/dashboard/TotalSpent'
 import WeeklyRevenue from '@/views/admin/dashboard/WeeklyRevenue'
 import { columnsDataCheck } from '@/views/admin/dashboard/variables/columnsData'
@@ -35,10 +37,10 @@ const page = () => {
         </div>
 
         {/* Traffic chart & Pie Chart */}
-        {/* <div className="grid grid-cols-1 gap-5 rounded-[20px] md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-5 rounded-[20px] md:grid-cols-2">
           <DailyTraffic />
           <PieChartCard />
-        </div> */}
+        </div>
 
         {/* Complex Table , Task & Calendar */}
         {/* <ComplexTable
