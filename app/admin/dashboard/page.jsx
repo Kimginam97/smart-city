@@ -1,8 +1,10 @@
+import MiniCalendar from '@/components/calendar/MiniCalendar'
 import Widget from '@/components/widget/Widget'
 import CheckTable from '@/views/admin/dashboard/CheckTable'
 import ComplexTable from '@/views/admin/dashboard/ComplexTable'
 import DailyTraffic from '@/views/admin/dashboard/DailyTraffic'
 import PieChartCard from '@/views/admin/dashboard/PieChartCard'
+import TaskCard from '@/views/admin/dashboard/TaskCard'
 import TotalSpent from '@/views/admin/dashboard/TotalSpent'
 import WeeklyRevenue from '@/views/admin/dashboard/WeeklyRevenue'
 import { columnsDataCheck, columnsDataComplex } from '@/views/admin/dashboard/variables/columnsData'
@@ -48,12 +50,12 @@ const page = () => {
         <ComplexTable columnsData={columnsDataComplex} tableData={tableDataComplex} />
 
         {/* Task chart & Calendar */}
-        {/* <div className="grid grid-cols-1 gap-5 rounded-[20px] md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-5 rounded-[20px] md:grid-cols-2">
           <TaskCard />
           <div className="grid grid-cols-1 rounded-[20px]">
             <MiniCalendar />
           </div>
-        </div> */}
+        </div>
       </div>
     </>
   )
