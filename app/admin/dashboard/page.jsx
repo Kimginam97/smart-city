@@ -1,11 +1,13 @@
 import Widget from '@/components/widget/Widget'
 import CheckTable from '@/views/admin/dashboard/CheckTable'
+import ComplexTable from '@/views/admin/dashboard/ComplexTable'
 import DailyTraffic from '@/views/admin/dashboard/DailyTraffic'
 import PieChartCard from '@/views/admin/dashboard/PieChartCard'
 import TotalSpent from '@/views/admin/dashboard/TotalSpent'
 import WeeklyRevenue from '@/views/admin/dashboard/WeeklyRevenue'
-import { columnsDataCheck } from '@/views/admin/dashboard/variables/columnsData'
+import { columnsDataCheck, columnsDataComplex } from '@/views/admin/dashboard/variables/columnsData'
 import tableDataCheck from '@/views/admin/dashboard/variables/tableDataCheck.json'
+import tableDataComplex from '@/views/admin/dashboard/variables/tableDataComplex.json'
 import { IoMdHome } from 'react-icons/io'
 import { IoDocuments } from 'react-icons/io5'
 import { MdBarChart, MdDashboard } from 'react-icons/md'
@@ -43,10 +45,7 @@ const page = () => {
         </div>
 
         {/* Complex Table , Task & Calendar */}
-        {/* <ComplexTable
-          columnsData={columnsDataComplex}
-          tableData={tableDataComplex}
-        /> */}
+        <ComplexTable columnsData={columnsDataComplex} tableData={tableDataComplex} />
 
         {/* Task chart & Calendar */}
         {/* <div className="grid grid-cols-1 gap-5 rounded-[20px] md:grid-cols-2">
