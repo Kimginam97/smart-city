@@ -1,3 +1,4 @@
+import './Checkbox.css'
 const Checkbox = (props) => {
   const { extra, color, ...rest } = props
   return (

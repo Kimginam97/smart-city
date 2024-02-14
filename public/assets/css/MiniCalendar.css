@@ -121,6 +121,7 @@ abbr[title] {
 
 body.dark .react-calendar {
 	border-radius: 30px;
+	background-color: #111C44 !important;
 }
 
 body.dark .react-calendar__navigation__prev-button {

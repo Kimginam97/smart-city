@@ -3,7 +3,7 @@
 import Navbar from '@/components/navbar/Navbar'
 import Sidebar from '@/components/sidebar/Sidebar'
 import routes from '@/routes'
-import { usePathname, useRouter } from 'next/navigation'
+import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
 
 import '../globals.css'
