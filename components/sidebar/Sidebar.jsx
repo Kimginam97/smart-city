@@ -1,7 +1,8 @@
-import { HiX } from 'react-icons/hi'
-import Links from './components/Links'
-import routes from '@/routes'
+import Links from './components/Links' // 링크 컴포넌트 가져오기
+import { HiX } from 'react-icons/hi' // HiX 아이콘 가져오기
+import routes from '@/routes' // 라우트 가져오기
 
+// 사이드바 컴포넌트 정의
 const Sidebar = ({ open, onClose }) => {
   return (
     <div
@@ -9,25 +10,28 @@ const Sidebar = ({ open, onClose }) => {
         open ? 'translate-x-0' : '-translate-x-96'
       }`}
     >
+      {/* 닫기 버튼 */}
       <span className="absolute top-4 right-4 block cursor-pointer xl:hidden" onClick={onClose}>
         <HiX />
       </span>
 
+      {/* 로고 */}
       <div className={`mx-[56px] mt-[50px] flex items-center`}>
         <div className="mt-1 ml-1 h-2.5 font-poppins text-[26px] font-black uppercase text-navy-700 dark:text-white">
           SMART <span className="font-medium">CITY</span>
         </div>
       </div>
+
+      {/* 구분선 */}
       <div className="mt-[58px] mb-7 h-px bg-gray-300 dark:bg-white/30" />
-      {/* Nav item */}
 
+      {/* 내비게이션 아이템 */}
       <ul className="mb-auto pt-1">
-        <Links routes={routes} />
+        <Links routes={routes} /> {/* 라우트를 이용한 내비게이션 아이템 */}
       </ul>
-
-      {/* Nav item end */}
+      {/* 내비게이션 아이템 종료 */}
     </div>
   )
 }
 
-export default Sidebar
+export default Sidebar // 사이드바 컴포넌트 내보내기
