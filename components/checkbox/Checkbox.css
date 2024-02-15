@@ -1,5 +1,5 @@
 input.defaultCheckbox::before {
-  content: url(../../public/assets/svg/checked.svg);
+  content: url(/assets/svg/checked.svg);
   color: white;
   opacity: 0;
   height: 16px;
