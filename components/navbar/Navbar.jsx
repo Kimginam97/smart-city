@@ -3,7 +3,8 @@ import { useState } from 'react'
 import Link from 'next/link'
 
 import { FiSearch, FiAlignJustify } from 'react-icons/fi'
-import { IoMdNotificationsOutline, IoMdInformationCircleOutline } from 'react-icons/io'
+import { IoMdNotificationsOutline } from 'react-icons/io'
+import { BiCctv } from 'react-icons/bi'
 import { BsArrowBarUp } from 'react-icons/bs'
 import { RiMoonFill, RiSunFill } from 'react-icons/ri'
 
@@ -114,7 +115,7 @@ const Navbar = (props) => {
         <Dropdown
           button={
             <p className="cursor-pointer">
-              <IoMdInformationCircleOutline className="h-4 w-4 text-gray-600 dark:text-white" />
+              <BiCctv className="h-4 w-4 text-gray-600 dark:text-white" />
             </p>
           }
           children={
