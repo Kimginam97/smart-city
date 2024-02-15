@@ -7,7 +7,7 @@ import Navbar from '@/components/navbar/Navbar' // Navbar 컴포넌트 불러오
 import Sidebar from '@/components/sidebar/Sidebar' // Sidebar 컴포넌트 불러오기
 import Footer from '@/components/footer/Footer' // Footer 컴포넌트 불러오기
 
-import routes from '@/routes' // 라우트 가져오기
+import routes from '@/routes/routes' // 라우트 가져오기
 
 import '../globals.css' // 글로벌 CSS 가져오기
 
