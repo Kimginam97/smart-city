@@ -148,25 +148,25 @@ export const pieChartOptions = {
 
 export const pieChartData = [63, 25, 12]
 
-export const barChartDataWeeklyRevenue = [
+export const barChartDataBasePay = [
   {
-    name: 'PRODUCT A',
-    data: [400, 370, 330, 390, 320, 350, 360, 320, 380],
+    name: '대기업',
+    data: [350, 370, 390, 410, 420, 450, 460, 510, 520],
     color: '#6AD2Fa'
   },
   {
-    name: 'PRODUCT B',
-    data: [400, 370, 330, 390, 320, 350, 360, 320, 380],
+    name: '중기업',
+    data: [250, 265, 270, 270, 285, 290, 300, 300, 305],
     color: '#4318FF'
   },
   {
-    name: 'PRODUCT C',
-    data: [400, 370, 330, 390, 320, 350, 360, 320, 380],
+    name: '소기업',
+    data: [200, 205, 210, 220, 230, 235, 250, 255, 270],
     color: '#EFF4FB'
   }
 ]
 
-export const barChartOptionsWeeklyRevenue = {
+export const barChartOptionsBasePay = {
   chart: {
     stacked: true,
     toolbar: {
@@ -189,7 +189,7 @@ export const barChartOptionsWeeklyRevenue = {
     }
   },
   xaxis: {
-    categories: ['17', '18', '19', '20', '21', '22', '23', '24', '25'],
+    categories: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월'],
     show: false,
     labels: {
       show: true,
@@ -256,20 +256,20 @@ export const barChartOptionsWeeklyRevenue = {
   }
 }
 
-export const lineChartDataTotalSpent = [
+export const lineChartDataWeeklyPeople = [
   {
-    name: 'Revenue',
-    data: [50, 64, 48, 66, 49, 68],
+    name: '인구 증가',
+    data: [500, 640, 480, 660, 490, 420],
     color: '#4318FF'
   },
   {
-    name: 'Profit',
-    data: [30, 40, 24, 46, 20, 46],
+    name: '인구 감소',
+    data: [300, 400, 240, 460, 200, 574],
     color: '#6AD2FF'
   }
 ]
 
-export const lineChartOptionsTotalSpent = {
+export const lineChartOptionsWeeklyPeople = {
   legend: {
     show: false
   },
@@ -322,7 +322,7 @@ export const lineChartOptionsTotalSpent = {
     },
     type: 'text',
     range: undefined,
-    categories: ['SEP', 'OCT', 'NOV', 'DEC', 'JAN', 'FEB']
+    categories: ['1월', '2월', '3월', '4월', '5월', '6월']
   },
 
   yaxis: {
