@@ -1,28 +1,31 @@
 import { useEffect, useRef, useState } from 'react'
 
+// 외부 클릭 감지 후 상태 변경을 처리하는 훅
 function useOutsideAlerter(ref, setX) {
   useEffect(() => {
     /**
-     * Alert if clicked on outside of element
+     * 요소 외부를 클릭하면 알림
      */
     function handleClickOutside(event) {
       if (ref.current && !ref.current.contains(event.target)) {
         setX(false)
       }
     }
-    // Bind the event listener
+    // 이벤트 리스너를 바인딩
     document.addEventListener('mousedown', handleClickOutside)
     return () => {
-      // Unbind the event listener on clean up
+      // 정리할 때 이벤트 리스너를 언바인딩
       document.removeEventListener('mousedown', handleClickOutside)
     }
   }, [ref, setX])
 }
 
+// 드롭다운 컴포넌트
 const Dropdown = (props) => {
   const { button, children, classNames, animation } = props
   const wrapperRef = useRef(null)
   const [openWrapper, setOpenWrapper] = useState(false)
+
   useOutsideAlerter(wrapperRef, setOpenWrapper)
 
   return (
