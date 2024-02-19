@@ -55,7 +55,7 @@ export const columnsDataColumns = [
   }
 ]
 
-export const columnsDataComplex = [
+export const columnsDataProject = [
   {
     Header: 'NAME',
     accessor: 'name'

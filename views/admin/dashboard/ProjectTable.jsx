@@ -5,12 +5,15 @@ import { useMemo } from 'react'
 import Card from '@/components/card/Card'
 import CardMenu from '@/components/card/CardMenu'
 import Progress from '@/components/progress/Progress'
-const ComplexTable = (props) => {
+
+const ProjectTable = (props) => {
   const { columnsData, tableData } = props
 
+  // 컬럼과 데이터 설정
   const columns = useMemo(() => columnsData, [columnsData])
   const data = useMemo(() => tableData, [tableData])
 
+  // 테이블 인스턴스 생성
   const tableInstance = useTable(
     {
       columns,
@@ -21,16 +24,19 @@ const ComplexTable = (props) => {
     usePagination
   )
 
+  // 테이블 인스턴스에서 필요한 속성 추출
   const { getTableProps, getTableBodyProps, headerGroups, page, prepareRow, initialState } = tableInstance
   initialState.pageSize = 5
 
   return (
     <Card extra={'w-full h-full px-6 pb-6 sm:overflow-x-auto'}>
+      {/* 테이블 헤더 */}
       <div className="relative flex items-center justify-between pt-4">
-        <div className="text-xl font-bold text-navy-700 dark:text-white">Complex Table</div>
+        <div className="text-xl font-bold text-navy-700 dark:text-white">프로젝트 진행도</div>
         <CardMenu />
       </div>
 
+      {/* 테이블 본문 */}
       <div className="mt-8 overflow-x-scroll xl:overflow-hidden">
         <table {...getTableProps()} className="w-full">
           <thead>
@@ -55,6 +61,7 @@ const ComplexTable = (props) => {
                 <tr {...row.getRowProps()} key={index}>
                   {row.cells.map((cell, index) => {
                     let data = ''
+                    // 셀 내용에 따른 조건부 렌더링
                     if (cell.column.Header === 'NAME') {
                       data = <p className="text-sm font-bold text-navy-700 dark:text-white">{cell.value}</p>
                     } else if (cell.column.Header === 'STATUS') {
@@ -93,4 +100,4 @@ const ComplexTable = (props) => {
   )
 }
 
-export default ComplexTable
+export default ProjectTable

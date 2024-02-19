@@ -13,12 +13,12 @@ import Widget from '@/components/widget/Widget'
 import DailyPowerConsumption from '@/views/admin/dashboard/DailyPowerConsumption'
 import IndustryChartCard from '@/views/admin/dashboard/IndustryChartCard'
 
-import ComplexTable from '@/views/admin/dashboard/ComplexTable'
+import ProjectTable from '@/views/admin/dashboard/ProjectTable'
 import TaskCard from '@/views/admin/dashboard/TaskCard'
 
-import { columnsDataCheck, columnsDataComplex } from '@/views/admin/dashboard/variables/columnsData'
+import { columnsDataCheck, columnsDataProject } from '@/views/admin/dashboard/variables/columnsData'
 import tableDataCheck from '@/views/admin/dashboard/variables/tableDataCheck.json'
-import tableDataComplex from '@/views/admin/dashboard/variables/tableDataComplex.json'
+import tableDataProject from '@/views/admin/dashboard/variables/tableDataProject.json'
 
 const DashboardPage = () => {
   return (
@@ -60,8 +60,8 @@ const DashboardPage = () => {
           <IndustryChartCard />
         </div>
 
-        {/* 복잡한 테이블, 업무 & 캘린더 */}
-        <ComplexTable columnsData={columnsDataComplex} tableData={tableDataComplex} />
+        {/* 프로젝트 테이블, 업무 & 캘린더 */}
+        <ProjectTable columnsData={columnsDataProject} tableData={tableDataProject} />
 
         {/* 업무 차트 & 캘린더 */}
         <div className="grid grid-cols-1 gap-5 rounded-[20px] md:grid-cols-2">
