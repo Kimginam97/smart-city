@@ -19,19 +19,19 @@ export const columnsDataDevelopment = [
 
 export const columnsDataCheck = [
   {
-    Header: 'NAME',
-    accessor: 'name'
+    Header: '발신자',
+    accessor: 'sender'
   },
   {
-    Header: 'PROGRESS',
-    accessor: 'progress'
+    Header: '제목',
+    accessor: 'title'
   },
   {
-    Header: 'QUANTITY',
-    accessor: 'quantity'
+    Header: '크기',
+    accessor: 'size'
   },
   {
-    Header: 'DATE',
+    Header: '날짜',
     accessor: 'date'
   }
 ]

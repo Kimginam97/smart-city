@@ -5,9 +5,11 @@ import { GiCash } from 'react-icons/gi'
 import MonthPeople from '@/views/admin/dashboard/MonthPeople'
 import BasePay from '@/views/admin/dashboard/BasePay'
 
+import ReceivedMail from '@/views/admin/dashboard/ReceivedMail'
+
 import MiniCalendar from '@/components/calendar/MiniCalendar'
 import Widget from '@/components/widget/Widget'
-import CheckTable from '@/views/admin/dashboard/CheckTable'
+
 import ComplexTable from '@/views/admin/dashboard/ComplexTable'
 import DailyTraffic from '@/views/admin/dashboard/DailyTraffic'
 import PieChartCard from '@/views/admin/dashboard/PieChartCard'
@@ -46,9 +48,9 @@ const DashboardPage = () => {
 
       {/* 테이블 & 차트 */}
       <div className="mt-5 grid grid-cols-1 gap-5 xl:grid-cols-2">
-        {/* 체크 테이블 */}
+        {/* 받은 메일함 테이블 */}
         <div>
-          <CheckTable columnsData={columnsDataCheck} tableData={tableDataCheck} />
+          <ReceivedMail columnsData={columnsDataCheck} tableData={tableDataCheck} />
         </div>
 
         {/* 트래픽 차트 & 파이 차트 */}
