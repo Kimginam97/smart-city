@@ -3,9 +3,11 @@ import LineChart from '@/components/charts/LineChart'
 import { lineChartOptionsWeeklyPeople, lineChartDataWeeklyPeople } from '@/variables/charts'
 import { MdArrowDropUp, MdOutlineCalendarToday, MdBarChart } from 'react-icons/md'
 
-const WeeklyPeople = () => {
+/* 월간 이용자 컴포넌트 */
+const MonthPeople = () => {
   return (
     <Card extra="!p-[20px] text-center">
+      {/* 월별/일별 변경 버튼 */}
       <div className="flex justify-between">
         <button className="linear mt-1 flex items-center justify-center gap-2 rounded-lg bg-lightPrimary p-2 text-gray-600 transition duration-200 hover:cursor-pointer hover:bg-gray-100 active:bg-gray-200 dark:bg-navy-700 dark:hover:opacity-90 dark:active:opacity-80">
           <MdOutlineCalendarToday />
@@ -16,6 +18,7 @@ const WeeklyPeople = () => {
         </button>
       </div>
 
+      {/* 차트 및 통계 */}
       <div className="flex h-full w-full flex-row justify-between sm:flex-wrap lg:flex-nowrap 2xl:overflow-hidden">
         <div className="flex flex-col">
           <p className="mt-[20px] text-3xl font-bold text-navy-700 dark:text-white">34,000K</p>
@@ -28,6 +31,7 @@ const WeeklyPeople = () => {
           </div>
         </div>
         <div className="h-[250px] w-full xl:h-[350px]">
+          {/* 선 그래프 */}
           <LineChart options={lineChartOptionsWeeklyPeople} series={lineChartDataWeeklyPeople} />
         </div>
       </div>
@@ -35,4 +39,4 @@ const WeeklyPeople = () => {
   )
 }
 
-export default WeeklyPeople
+export default MonthPeople

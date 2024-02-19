@@ -2,7 +2,7 @@ import { FaPeopleGroup, FaWonSign } from 'react-icons/fa6'
 import { FaPersonArrowUpFromLine, FaPersonArrowDownToLine } from 'react-icons/fa6'
 import { GiCash } from 'react-icons/gi'
 
-import WeeklyPeople from '@/views/admin/dashboard/WeeklyPeople'
+import MonthPeople from '@/views/admin/dashboard/MonthPeople'
 import BasePay from '@/views/admin/dashboard/BasePay'
 
 import MiniCalendar from '@/components/calendar/MiniCalendar'
@@ -40,7 +40,7 @@ const DashboardPage = () => {
 
       {/* 인구 및 기업별 월급 비교 차트 */}
       <div className="mt-5 grid grid-cols-1 gap-5 md:grid-cols-2">
-        <WeeklyPeople />
+        <MonthPeople />
         <BasePay />
       </div>
 
