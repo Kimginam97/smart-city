@@ -10,9 +10,10 @@ import ReceivedMail from '@/views/admin/dashboard/ReceivedMail'
 import MiniCalendar from '@/components/calendar/MiniCalendar'
 import Widget from '@/components/widget/Widget'
 
+import DailyPowerConsumption from '@/views/admin/dashboard/DailyPowerConsumption'
+import IndustryChartCard from '@/views/admin/dashboard/IndustryChartCard'
+
 import ComplexTable from '@/views/admin/dashboard/ComplexTable'
-import DailyTraffic from '@/views/admin/dashboard/DailyTraffic'
-import PieChartCard from '@/views/admin/dashboard/PieChartCard'
 import TaskCard from '@/views/admin/dashboard/TaskCard'
 
 import { columnsDataCheck, columnsDataComplex } from '@/views/admin/dashboard/variables/columnsData'
@@ -53,10 +54,10 @@ const DashboardPage = () => {
           <ReceivedMail columnsData={columnsDataCheck} tableData={tableDataCheck} />
         </div>
 
-        {/* 트래픽 차트 & 파이 차트 */}
+        {/* 전력 소비량 차트 & 산업종류 차트 */}
         <div className="grid grid-cols-1 gap-5 rounded-[20px] md:grid-cols-2">
-          <DailyTraffic />
-          <PieChartCard />
+          <DailyPowerConsumption />
+          <IndustryChartCard />
         </div>
 
         {/* 복잡한 테이블, 업무 & 캘린더 */}

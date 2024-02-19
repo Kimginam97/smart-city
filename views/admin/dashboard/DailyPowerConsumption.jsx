@@ -1,16 +1,16 @@
 import Card from '@/components/card/Card'
 import BarChart from '@/components/charts/BarChart'
-import { barChartDataDailyTraffic, barChartOptionsDailyTraffic } from '@/variables/charts'
+import { barChartDataDailyPowerConsumption, barChartOptionsDailyPowerConsumption } from '@/variables/charts'
 import { MdArrowDropUp } from 'react-icons/md'
 
-const DailyTraffic = () => {
+const DailyPowerConsumption = () => {
   return (
     <Card extra="pb-7 p-[20px]">
       <div className="flex flex-row justify-between">
         <div className="ml-1 pt-2">
-          <p className="text-sm font-medium leading-4 text-gray-600">Daily Traffic</p>
+          <p className="text-sm font-medium leading-4 text-gray-600">실시간 전력사용량</p>
           <p className="text-[34px] font-bold text-navy-700 dark:text-white">
-            2.579 <span className="text-sm font-medium leading-6 text-gray-600">Visitors</span>
+            12,579 <span className="text-sm font-medium leading-6 text-gray-600">KWH</span>
           </p>
         </div>
         <div className="mt-2 flex items-start">
@@ -22,10 +22,10 @@ const DailyTraffic = () => {
       </div>
 
       <div className="h-[300px] w-full pt-10 pb-0">
-        <BarChart chartData={barChartDataDailyTraffic} chartOptions={barChartOptionsDailyTraffic} />
+        <BarChart chartData={barChartDataDailyPowerConsumption} chartOptions={barChartOptionsDailyPowerConsumption} />
       </div>
     </Card>
   )
 }
 
-export default DailyTraffic
+export default DailyPowerConsumption

@@ -1,11 +1,11 @@
-export const barChartDataDailyTraffic = [
+export const barChartDataDailyPowerConsumption = [
   {
-    name: 'Daily Traffic',
-    data: [20, 30, 40, 20, 45, 50, 30]
+    name: '실시간 전력소비량',
+    data: [2000, 3000, 4000, 2000, 4500, 5000, 3000]
   }
 ]
 
-export const barChartOptionsDailyTraffic = {
+export const barChartOptionsDailyPowerConsumption = {
   chart: {
     toolbar: {
       show: false
@@ -103,8 +103,8 @@ export const barChartOptionsDailyTraffic = {
 }
 
 export const pieChartOptions = {
-  labels: ['Your files', 'System', 'Empty'],
-  colors: ['#4318FF', '#6AD2FF', '#EFF4FB'],
+  labels: ['IT업', '관광업', '어업', '농업', '제조업', '기타'],
+  colors: ['#4318FF', '#6AD2FF', '#176B87', '#FFF6E9', '#BBE2EC', '#0D9276'],
   chart: {
     width: '50px'
   },
@@ -133,7 +133,7 @@ export const pieChartOptions = {
     }
   },
   fill: {
-    colors: ['#4318FF', '#6AD2FF', '#EFF4FB']
+    colors: ['#4318FF', '#6AD2FF', '#176B87', '#FFF6E9', '#BBE2EC', '#0D9276']
   },
   tooltip: {
     enabled: true,
@@ -146,7 +146,7 @@ export const pieChartOptions = {
   }
 }
 
-export const pieChartData = [63, 25, 12]
+export const pieChartData = [30, 25, 10, 20, 15]
 
 export const barChartDataBasePay = [
   {
