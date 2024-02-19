@@ -1,3 +1,4 @@
+import Navbar from '@/components/navbar/Navbar'
 import './globals.css'
 
 export const metadata = {
@@ -8,7 +9,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ko">
-      <body suppressHydrationWarning={true}>{children}</body>
+      <body className="bg-lightPrimary" suppressHydrationWarning={true}>
+        {children}
+      </body>
     </html>
   )
 }
