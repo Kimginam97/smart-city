@@ -33,7 +33,7 @@ const ReceivedMail = (props) => {
     <Card extra={'w-full h-full sm:overflow-auto px-6'}>
       {/* 제목과 메뉴를 포함한 헤더 섹션 */}
       <header className="relative flex items-center justify-between pt-4">
-        <div className="text-xl font-bold text-navy-700 dark:text-white">Check Table</div>
+        <div className="text-xl font-bold text-navy-700 dark:text-white">받은 메일함</div>
         <CardMenu />
       </header>
 

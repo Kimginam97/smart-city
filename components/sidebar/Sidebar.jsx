@@ -18,7 +18,7 @@ const Sidebar = ({ open, onClose }) => {
       {/* 로고 */}
       <div className={`mx-[56px] mt-[50px] flex items-center`}>
         <div className="mt-1 ml-1 h-2.5 font-poppins text-[26px] font-black uppercase text-navy-700 dark:text-white">
-          SMART <span className="font-medium">CITY</span>
+          스마트 <span className="font-medium">도시</span>
         </div>
       </div>
 
