@@ -9,7 +9,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ko">
       <body className="bg-lightPrimary" suppressHydrationWarning={true}>
-        {children}
+        <main className="relative w-full h-screen overflow-hidden transition-all ease-in">{children}</main>
       </body>
     </html>
   )

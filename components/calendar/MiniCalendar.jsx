@@ -4,7 +4,7 @@ import Calendar from 'react-calendar'
 
 import 'react-calendar/dist/Calendar.css'
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md'
-import '@/public/assets/css/MiniCalendar.css'
+import './MiniCalendar.css'
 import Card from '../card/Card'
 
 const MiniCalendar = () => {

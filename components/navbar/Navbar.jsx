@@ -9,7 +9,7 @@ import { BiCctv } from 'react-icons/bi'
 import { BsArrowBarUp } from 'react-icons/bs'
 import { RiMoonFill, RiSunFill } from 'react-icons/ri'
 
-import cctv from '../../public/assets/img/layout/cctv.webp'
+import cctv from '../../public/assets/images/dashboards/cctv.webp'
 
 import Dropdown from '../dropdown/Dropdown'
 
@@ -152,7 +152,7 @@ const Navbar = (props) => {
 
         {/* 사용자 드롭다운 */}
         <Dropdown
-          button={<img className="h-10 w-10 rounded-full" src="/assets/img/avatars/avatar4.png" alt="Elon Musk" />}
+          button={<img className="h-10 w-10 rounded-full" src="/assets/images/dashboards/avatar.png" alt="duduri" />}
           children={
             <div className="flex w-56 flex-col justify-start rounded-[20px] bg-white bg-cover bg-no-repeat shadow-xl shadow-shadow-500 dark:!bg-navy-700 dark:text-white dark:shadow-none">
               {/* 사용자 정보 */}
