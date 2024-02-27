@@ -13,3 +13,11 @@
 .head-text {
   @apply xl:text-[10rem] text-[6rem] xl:leading-[11rem] leading-[7rem] font-black text-navy-900;
 }
+
+.editortabs-container {
+  @apply w-16 border-[2px] rounded-lg flex flex-col justify-center items-center ml-1 py-4 gap-4;
+}
+
+.tab-btn {
+  @apply w-14 h-14 flex justify-center items-center cursor-pointer select-none;
+}

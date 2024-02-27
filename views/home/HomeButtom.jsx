@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { useSnapshot } from 'valtio'
-import { getContrastingColor } from '@/config/helper'
+import { getContrastingColor } from '@/config/Helper'
 import state from '../../store/Store'
 
 // 홈 버튼 컴포넌트 정의
