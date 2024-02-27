@@ -30,7 +30,7 @@ export default function Home() {
                 </h1>
               </motion.div>
               <motion.div {...headContentAnimation} className="flex flex-col gap-5">
-                <p className="max-w-md font-normal text-gray-600 text-base">
+                <p className="max-w-md font-normal text-gray-900 text-base">
                   스마트 도시는 혁신적인 기술과 인프라를 활용하여 도시의 기능과 서비스를 향상시키는 개념입니다. 주요
                   목표는 도시의 <strong>지속 가능성, 효율성, 안전성, 그리고 편의성</strong> 을 증진합니다.
                 </p>

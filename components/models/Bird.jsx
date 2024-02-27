@@ -2,14 +2,12 @@ import { useEffect, useRef } from 'react'
 import { useFrame } from '@react-three/fiber'
 import { useAnimations, useGLTF } from '@react-three/drei'
 
-import birdScene from '../assets/models/bird.glb'
-
 // 3D Model from: https://sketchfab.com/3d-models/phoenix-bird-844ba0cf144a413ea92c779f18912042
 export default function Bird() {
   const birdRef = useRef()
 
   // Load the 3D model and animations from the provided GLTF file
-  const { scene, animations } = useGLTF(birdScene)
+  const { scene, animations } = useGLTF('/assets/models/bird.glb')
 
   // Get access to the animations for the bird
   const { actions } = useAnimations(animations, birdRef)
@@ -53,3 +51,5 @@ export default function Bird() {
     </mesh>
   )
 }
+
+useGLTF.preload('/assets/models/bird.glb')
