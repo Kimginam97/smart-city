@@ -29,13 +29,8 @@ const ThreeTool = () => {
           </motion.div>
 
           <motion.div className="absolute z-10 top-5 right-5" {...fadeAnimation}>
-            <Link href="/admin/login">
-              <HomeButtom
-                type="filled"
-                title="로그인"
-                handleClick={() => (state.intro = true)}
-                customStyles="w-fit px-4 py-2.5 font-bold text-sm"
-              />
+            <Link href="/login">
+              <HomeButtom type="filled" title="로그인" customStyles="w-fit px-4 py-2.5 font-bold text-sm" />
             </Link>
           </motion.div>
         </>

@@ -1,7 +1,7 @@
 import { MdBarChart } from 'react-icons/md'
 import Card from '@/components/card/Card'
 
-import { barChartDataBasePay, barChartOptionsBasePay } from '@/variables/charts'
+import { barChartDataBasePay, barChartOptionsBasePay } from '@/config/Charts'
 import BarChart from '@/components/charts/BarChart'
 
 /* 기업별 급여를 보여주는 컴포넌트 */

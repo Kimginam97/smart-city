@@ -1,6 +1,6 @@
 import Card from '@/components/card/Card'
 import LineChart from '@/components/charts/LineChart'
-import { lineChartOptionsWeeklyPeople, lineChartDataWeeklyPeople } from '@/variables/charts'
+import { lineChartOptionsWeeklyPeople, lineChartDataWeeklyPeople } from '@/config/Charts'
 import { MdArrowDropUp, MdOutlineCalendarToday, MdBarChart } from 'react-icons/md'
 
 /* 월간 이용자 컴포넌트 */
