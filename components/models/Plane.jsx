@@ -6,7 +6,7 @@ import { useFrame } from '@react-three/fiber'
 export default function Plane({ isRotating, ...props }) {
   const planeRef = useRef() // 비행기 요소에 대한 참조
   // 3D 모델과 애니메이션을 불러옴
-  const { scene, animations } = useGLTF('assets/models/plane.glb')
+  const { scene, animations } = useGLTF('/assets/models/plane.glb')
   // 비행기와 관련된 애니메이션 액션을 가져옴
   const { actions } = useAnimations(animations, planeRef)
 
@@ -54,4 +54,4 @@ export default function Plane({ isRotating, ...props }) {
 }
 
 // 모델 로드를 미리 처리하여 성능을 최적화함
-useGLTF.preload('assets/models/plane.glb')
+useGLTF.preload('/assets/models/plane.glb')

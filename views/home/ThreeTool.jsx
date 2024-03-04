@@ -1,11 +1,14 @@
+import { useState } from 'react'
+import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
-import React, { useState } from 'react'
-import HomeButtom from './HomeButtom'
+import { useSnapshot } from 'valtio'
+
 import { slideAnimation, fadeAnimation } from '@/config/Motion'
 import { EditorTabs } from '@/config/Constants'
-import Tab from './Tab'
-import { useSnapshot } from 'valtio'
+
 import state from '../../store/Store'
+import Tab from './Tab'
+import HomeButtom from './HomeButtom'
 
 const ThreeTool = () => {
   const snap = useSnapshot(state)
@@ -26,12 +29,14 @@ const ThreeTool = () => {
           </motion.div>
 
           <motion.div className="absolute z-10 top-5 right-5" {...fadeAnimation}>
-            <HomeButtom
-              type="filled"
-              title="뒤로가기"
-              handleClick={() => (state.intro = true)}
-              customStyles="w-fit px-4 py-2.5 font-bold text-sm"
-            />
+            <Link href="/admin/login">
+              <HomeButtom
+                type="filled"
+                title="로그인"
+                handleClick={() => (state.intro = true)}
+                customStyles="w-fit px-4 py-2.5 font-bold text-sm"
+              />
+            </Link>
           </motion.div>
         </>
       )}

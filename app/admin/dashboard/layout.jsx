@@ -9,7 +9,7 @@ import Footer from '@/components/footer/Footer' // Footer 컴포넌트 불러오
 
 import routes from '@/routes/routes' // 라우트 가져오기
 
-import '../globals.css' // 글로벌 CSS 가져오기
+import '../../globals.css' // 글로벌 CSS 가져오기
 
 export default function AdminLayout({ children }) {
   // 사이드바 열림 여부 상태 및 현재 경로 상태 설정

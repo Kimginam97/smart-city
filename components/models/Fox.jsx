@@ -4,7 +4,7 @@ import { useGLTF, useAnimations } from '@react-three/drei'
 // 3D 모델 출처: https://sketchfab.com/3d-models/fox-f372c04de44640fbb6a4f9e4e5845c78
 export default function Fox({ currentAnimation, ...props }) {
   const group = useRef() // 모델의 그룹 요소에 대한 참조
-  const { nodes, materials, animations } = useGLTF('assets/models/fox.glb') // GLTF 파일로부터 노드, 재질, 애니메이션 데이터를 가져옴
+  const { nodes, materials, animations } = useGLTF('/assets/models/fox.glb') // GLTF 파일로부터 노드, 재질, 애니메이션 데이터를 가져옴
   const { actions } = useAnimations(animations, group) // 애니메이션을 제어하기 위해 useAnimations 훅 사용
 
   // currentAnimation prop이 변경될 때마다 이펙트가 실행됨
@@ -58,4 +58,4 @@ export default function Fox({ currentAnimation, ...props }) {
 }
 
 // 모델 로드를 미리 처리하여 성능을 최적화함
-useGLTF.preload('assets/models/fox.glb')
+useGLTF.preload('/assets/models/fox.glb')

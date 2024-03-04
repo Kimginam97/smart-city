@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { useSnapshot } from 'valtio'
 import { getContrastingColor } from '@/config/Helper'
 import state from '../../store/Store'
