@@ -1,6 +1,6 @@
-import Card from '@/app/components/card/Card'
-import PieChart from '@/app/components/charts/PieChart'
-import { pieChartData, pieChartOptions } from '@/app/utils/Charts' // 차트 데이터 및 옵션 불러오기
+import Card from '@/components/card/Card' // Card 컴포넌트 불러오기
+import PieChart from '@/components/charts/PieChart' // PieChart 컴포넌트 불러오기
+import { pieChartData, pieChartOptions } from '@/config/Charts' // 차트 데이터 및 옵션 불러오기
 
 const IndustryChartCard = () => {
   return (

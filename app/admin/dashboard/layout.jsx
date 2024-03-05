@@ -3,12 +3,13 @@
 import { useEffect, useState } from 'react'
 import { usePathname } from 'next/navigation'
 
-import routes from '@/app/routes/routes' // 라우트 가져오기
+import Navbar from '@/components/navbar/Navbar' // Navbar 컴포넌트 불러오기
+import Sidebar from '@/components/sidebar/Sidebar' // Sidebar 컴포넌트 불러오기
+import Footer from '@/components/footer/Footer' // Footer 컴포넌트 불러오기
+
+import routes from '@/routes/routes' // 라우트 가져오기
 
 import '../../globals.css' // 글로벌 CSS 가져오기
-import Sidebar from '@/app/components/sidebar/Sidebar'
-import Navbar from '@/app/components/navbar/Navbar'
-import Footer from '@/app/components/footer/Footer'
 
 export default function AdminLayout({ children }) {
   // 사이드바 열림 여부 상태 및 현재 경로 상태 설정

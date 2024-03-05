@@ -1,9 +1,8 @@
 'use client'
-
+import Footer from '@/components/footer/Footer'
+import SignIn from '@/views/auth/SignIn'
+import ThreeScene from '@/views/home/ThreeScene'
 import Link from 'next/link'
-import SignIn from '../ui/auth/SignIn'
-import ThreeScene from '../ui/home/ThreeScene'
-import Footer from '../components/footer/Footer'
 
 const page = () => {
   return (

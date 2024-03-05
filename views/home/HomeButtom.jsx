@@ -1,6 +1,6 @@
 import { useSnapshot } from 'valtio'
-import { getContrastingColor } from '@/app/utils/Helper'
-import state from '@/app/store/Store'
+import { getContrastingColor } from '@/config/Helper'
+import state from '../../store/Store'
 
 // 홈 버튼 컴포넌트 정의
 const HomeButtom = ({ type, title, customStyles, handleClick }) => {

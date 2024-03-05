@@ -9,7 +9,7 @@ import { BiCctv } from 'react-icons/bi'
 import { BsArrowBarUp } from 'react-icons/bs'
 import { RiMoonFill, RiSunFill } from 'react-icons/ri'
 
-import cctv from '../../../public/assets/images/dashboards/cctv.webp'
+import cctv from '../../public/assets/images/dashboards/cctv.webp'
 
 import Dropdown from '../dropdown/Dropdown'
 

@@ -1,5 +1,5 @@
-import Checkbox from '@/app/components/checkbox/Checkbox'
-import InputField from '@/app/components/fields/InputField'
+import Checkbox from '@/components/checkbox/Checkbox'
+import InputField from '@/components/fields/InputField'
 import { FcGoogle } from 'react-icons/fc'
 
 export default function SignIn() {

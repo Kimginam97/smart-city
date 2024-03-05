@@ -10,7 +10,7 @@ export const authConfig = {
 
       if (isOnDashboard) {
         if (isLoggedIn) return true
-        return true // Redirect unathenticated users to login page
+        return false // Redirect unathenticated users to login page
       }
       return true
     }

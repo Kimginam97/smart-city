@@ -3,10 +3,10 @@ import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useSnapshot } from 'valtio'
 
-import { slideAnimation, fadeAnimation } from '@/app/utils/Motion'
-import { EditorTabs } from '@/app/utils/Constants'
+import { slideAnimation, fadeAnimation } from '@/config/Motion'
+import { EditorTabs } from '@/config/Constants'
 
-import state from '@/app/store/Store'
+import state from '../../store/Store'
 import Tab from './Tab'
 import HomeButtom from './HomeButtom'
 

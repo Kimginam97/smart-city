@@ -1,7 +1,7 @@
 import Link from 'next/link' // Next.js의 Link 컴포넌트 가져오기
 import { usePathname } from 'next/navigation' // Next.js의 usePathname 훅 가져오기
 
-import DashIcon from '../../icons/DashIcon'
+import DashIcon from '@/components/icons/DashIcon' // 대시 아이콘 컴포넌트 가져오기
 
 // 사이드바 링크 컴포넌트 정의
 export function SidebarLinks(props) {

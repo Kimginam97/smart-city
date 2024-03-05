@@ -2,23 +2,23 @@ import { FaPeopleGroup, FaWonSign } from 'react-icons/fa6'
 import { FaPersonArrowUpFromLine, FaPersonArrowDownToLine } from 'react-icons/fa6'
 import { GiCash } from 'react-icons/gi'
 
-import MonthPeople from '@/app/ui/admin/dashboard/components/MonthPeople'
-import BasePay from '@/app/ui/admin/dashboard/components/BasePay'
+import MonthPeople from '@/views/admin/dashboard/components/MonthPeople'
+import BasePay from '@/views/admin/dashboard/components/BasePay'
 
-import ReceivedMail from '@/app/ui/admin/dashboard/components/ReceivedMail'
+import ReceivedMail from '@/views/admin/dashboard/components/ReceivedMail'
 
-import MiniCalendar from '@/app/components/calendar/MiniCalendar'
-import Widget from '@/app/components/widget/Widget'
+import MiniCalendar from '@/components/calendar/MiniCalendar'
+import Widget from '@/components/widget/Widget'
 
-import DailyPowerConsumption from '@/app/ui/admin/dashboard/components/DailyPowerConsumption'
-import IndustryChartCard from '@/app/ui/admin/dashboard/components/IndustryChartCard'
+import DailyPowerConsumption from '@/views/admin/dashboard/components/DailyPowerConsumption'
+import IndustryChartCard from '@/views/admin/dashboard/components/IndustryChartCard'
 
-import ProjectTable from '@/app/ui/admin/dashboard/components/ProjectTable'
-import TaskCard from '@/app/ui/admin/dashboard/components/TaskCard'
+import ProjectTable from '@/views/admin/dashboard/components/ProjectTable'
+import TaskCard from '@/views/admin/dashboard/components/TaskCard'
 
-import { columnsDataCheck, columnsDataProject } from '@/app/ui/admin/dashboard/variables/columnsData'
-import tableDataCheck from '@/app/ui/admin/dashboard/variables/tableDataCheck.json'
-import tableDataProject from '@/app/ui/admin/dashboard/variables/tableDataProject.json'
+import { columnsDataCheck, columnsDataProject } from '@/views/admin/dashboard/variables/columnsData'
+import tableDataCheck from '@/views/admin/dashboard/variables/tableDataCheck.json'
+import tableDataProject from '@/views/admin/dashboard/variables/tableDataProject.json'
 
 const DashboardPage = () => {
   return (

@@ -1,6 +1,6 @@
 import Links from './components/Links' // 링크 컴포넌트 가져오기
 import { HiX } from 'react-icons/hi' // HiX 아이콘 가져오기
-import routes from '@/app/routes/routes' // 라우트 가져오기
+import routes from '@/routes/routes' // 라우트 가져오기
 
 // 사이드바 컴포넌트 정의
 const Sidebar = ({ open, onClose }) => {
