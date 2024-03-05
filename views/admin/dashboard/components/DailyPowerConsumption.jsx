@@ -1,6 +1,6 @@
 import Card from '@/components/card/Card'
 import BarChart from '@/components/charts/BarChart'
-import { barChartDataDailyPowerConsumption, barChartOptionsDailyPowerConsumption } from '@/config/Charts'
+import { barChartDataDailyPowerConsumption, barChartOptionsDailyPowerConsumption } from '@/utils/Charts'
 import { MdArrowDropUp } from 'react-icons/md'
 
 const DailyPowerConsumption = () => {

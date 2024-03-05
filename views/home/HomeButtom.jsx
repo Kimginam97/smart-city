@@ -1,5 +1,5 @@
 import { useSnapshot } from 'valtio'
-import { getContrastingColor } from '@/config/Helper'
+import { getContrastingColor } from '@/utils/Helper'
 import state from '../../store/Store'
 
 // 홈 버튼 컴포넌트 정의

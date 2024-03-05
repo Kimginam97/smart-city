@@ -3,7 +3,7 @@
 import { motion, AnimatePresence } from 'framer-motion'
 import { useSnapshot } from 'valtio'
 import { FaCity } from 'react-icons/fa'
-import { slideAnimation, headContainerAnimation, headTextAnimation, headContentAnimation } from '../config/Motion'
+import { slideAnimation, headContainerAnimation, headTextAnimation, headContentAnimation } from '../utils/Motion'
 
 import HomeButtom from '@/views/home/HomeButtom'
 import ThreeScene from '@/views/home/ThreeScene'

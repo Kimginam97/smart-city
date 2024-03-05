@@ -3,8 +3,8 @@ import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useSnapshot } from 'valtio'
 
-import { slideAnimation, fadeAnimation } from '@/config/Motion'
-import { EditorTabs } from '@/config/Constants'
+import { slideAnimation, fadeAnimation } from '@/utils/Motion'
+import { EditorTabs } from '@/utils/Constants'
 
 import state from '../../store/Store'
 import Tab from './Tab'
