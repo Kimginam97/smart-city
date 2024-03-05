@@ -1,6 +1,6 @@
-import Card from '@/components/card/Card'
-import CardMenu from '@/components/card/CardMenu'
-import Checkbox from '@/components/checkbox/Checkbox'
+import Card from '@/app/components/card/Card'
+import CardMenu from '@/app/components/card/CardMenu'
+import Checkbox from '@/app/components/checkbox/Checkbox'
 import { MdDragIndicator, MdCheckCircle } from 'react-icons/md'
 
 const TaskCard = () => {

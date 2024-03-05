@@ -1,8 +1,8 @@
 import { MdBarChart } from 'react-icons/md'
-import Card from '@/components/card/Card'
+import { barChartDataBasePay, barChartOptionsBasePay } from '@/app/utils/Charts'
 
-import { barChartDataBasePay, barChartOptionsBasePay } from '@/config/Charts'
-import BarChart from '@/components/charts/BarChart'
+import Card from '@/app/components/card/Card'
+import BarChart from '@/app/components/charts/BarChart'
 
 /* 기업별 급여를 보여주는 컴포넌트 */
 const BasePay = () => {

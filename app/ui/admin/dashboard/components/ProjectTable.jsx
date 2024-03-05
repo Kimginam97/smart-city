@@ -2,9 +2,9 @@
 import { useGlobalFilter, usePagination, useSortBy, useTable } from 'react-table'
 import { MdCheckCircle, MdCancel, MdOutlineError } from 'react-icons/md'
 import { useMemo } from 'react'
-import Card from '@/components/card/Card'
-import CardMenu from '@/components/card/CardMenu'
-import Progress from '@/components/progress/Progress'
+import Card from '@/app/components/card/Card'
+import CardMenu from '@/app/components/card/CardMenu'
+import Progress from '@/app/components/progress/Progress'
 
 const ProjectTable = (props) => {
   const { columnsData, tableData } = props

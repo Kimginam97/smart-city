@@ -1,11 +1,11 @@
 import { Canvas } from '@react-three/fiber'
 import { CameraControls, Environment } from '@react-three/drei'
 
-import Bird from '@/components/models/Bird'
-import Fox from '@/components/models/Fox'
-import Island from '@/components/models/Island'
-import Plane from '@/components/models/Plane'
-import Sky from '@/components/models/Sky'
+import Bird from '@/app/components/models/Bird'
+import Fox from '@/app/components/models/Fox'
+import Island from '@/app/components/models/Island'
+import Plane from '@/app/components/models/Plane'
+import Sky from '@/app/components/models/Sky'
 
 const ThreeScene = () => {
   return (

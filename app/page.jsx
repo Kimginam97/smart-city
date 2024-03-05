@@ -3,13 +3,13 @@
 import { motion, AnimatePresence } from 'framer-motion'
 import { useSnapshot } from 'valtio'
 import { FaCity } from 'react-icons/fa'
-import { slideAnimation, headContainerAnimation, headTextAnimation, headContentAnimation } from '../config/Motion'
+import { slideAnimation, headContainerAnimation, headTextAnimation, headContentAnimation } from './utils/Motion'
 
-import HomeButtom from '@/views/home/HomeButtom'
-import ThreeScene from '@/views/home/ThreeScene'
-import ThreeTool from '@/views/home/ThreeTool'
+import state from './store/Store'
 
-import state from '../store/Store'
+import HomeButtom from './ui/home/HomeButtom'
+import ThreeScene from './ui/home/ThreeScene'
+import ThreeTool from './ui/home/ThreeTool'
 
 export default function Home() {
   const snap = useSnapshot(state)

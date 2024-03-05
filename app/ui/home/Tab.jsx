@@ -1,6 +1,6 @@
 import { useSnapshot } from 'valtio'
 
-import state from '../../store/Store'
+import state from '../../../app/store/Store'
 
 const Tab = ({ tab, isActiveTab, handleClick }) => {
   const snap = useSnapshot(state)

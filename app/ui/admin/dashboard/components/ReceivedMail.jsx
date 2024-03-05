@@ -1,10 +1,11 @@
 'use client'
 import React, { useMemo } from 'react'
 
+import Card from '@/app/components/card/Card'
+import CardMenu from '@/app/components/card/CardMenu'
+import Checkbox from '@/app/components/checkbox/Checkbox'
+
 import { useGlobalFilter, usePagination, useSortBy, useTable } from 'react-table'
-import Card from '@/components/card/Card' // Card 컴포넌트 불러오기
-import Checkbox from '@/components/checkbox/Checkbox' // Checkbox 컴포넌트 불러오기
-import CardMenu from '@/components/card/CardMenu' // CardMenu 컴포넌트 불러오기
 
 const ReceivedMail = (props) => {
   const { columnsData, tableData } = props
