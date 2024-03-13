@@ -1,6 +1,6 @@
 'use client'
 import Footer from '@/components/footer/Footer'
-import SignIn from '@/views/auth/SignIn'
+import Login from '@/views/auth/Login'
 import ThreeScene from '@/views/home/ThreeScene'
 import Link from 'next/link'
 
@@ -23,7 +23,7 @@ const page = () => {
                     <p className="ml-3 text-sm text-gray-600">뒤로가기</p>
                   </div>
                 </Link>
-                <SignIn />
+                <Login />
                 <div className="absolute right-0 hidden h-full min-h-screen md:block lg:w-[49vw] 2xl:w-[44vw]">
                   <ThreeScene />
                 </div>
